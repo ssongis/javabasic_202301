@@ -2,7 +2,7 @@ package org.example.basic;
 
 import static org.example.basic.DanceLevel.*;
 
-public class Dancer extends Object {
+public abstract class Dancer extends Object {
 
     private final String crewName; // 팀의 이름
     private final String myName; // 내 이름
@@ -45,6 +45,7 @@ public class Dancer extends Object {
         this.flexible = true;
     }
 
+    //public abstract void dance();
     // 춤추기
     public void dance() {
         //캡슐화, private으로 바꾸고 추가

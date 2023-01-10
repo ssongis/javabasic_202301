@@ -1,8 +1,10 @@
 package org.example.inherit;
 
 import org.example.basic.Dancer;
+import org.example.basic.Rapper;
+import org.example.basic.Singer;
 
-public class IdolDancer extends Dancer {
+public class IdolDancer extends Dancer implements Singer, Rapper {
 
     private int numberOfFan; //팬의 수
 
@@ -23,4 +25,13 @@ public class IdolDancer extends Dancer {
        System.out.println("윙크를 세게 갈깁니다.");
     }
 
+    @Override
+    public void sing() {
+
+    }
+
+    @Override
+    public void rap() {
+        
+    }
 }
